@@ -16,7 +16,7 @@ public class Ssaki extends Fauna implements Zycie
     String dieta;
     String kolor_futra;
 
-    public Ssaki(String x,String y,String k)
+    public Ssaki()
     {
         
         Random r = new Random();
