@@ -12,40 +12,31 @@ public class Las
         int x;
         
         for(int i=0;i<=99;i++)
+        {
+            x = r.nextInt(2);
+            switch(x)
             {
-                x = r.nextInt(2);
-                switch(x)
-                    {
-                        case 0:
-                            las[i] = new Ssaki();
-                            break;
-                            
-                        case 1:
-                            las[i] = new Kwiaty();
-                            break;
+                case 0:
+                    las[i] = new Ssaki();
+                    break;
 
-                    } 
-        
-            }
-        
-        for(int i=0;i<=99;i++)
-            {
-                System.out.println("Organizm numer "+(i+1));
-                las[i].show();
-            }
-        
-        
+                            
+                case 1:
+                    las[i] = new Kwiaty();
+                    break;
+            } 
+            
+            // Wypisanie nowego obiektu
+            System.out.println("Organizm numer "+(i+1));
+            las[i].show();
+        }
     }
-    
-    
 }
 
  /*
                         case 0:las[i] = new Kwiaty("Stokrotka","Biały",false);break;
                         case 1:las[i] = new Kwiaty("Dzika róza","Różowy",true);break;
                         case 2:las[i] = new Kwiaty("Niezapominajka","Niebieski",false);break;
-                        case 3:las[i] = new Ssaki("Dzik","Żołędzie","Ciemnobrązowe");break;
-                        case 4:las[i] = new Ssaki("Sarna","Owoce leśne","Jasnobrązowe");break;
-                        case 5:las[i] = new Ssaki("Lis","Mięso","Rude");break;
+
                         case 6:las[i] = new Kwiaty("Zawilec","Zolty",false);break;
 */
