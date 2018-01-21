@@ -18,28 +18,28 @@ public class Kwiaty extends Flora implements Zycie
         boolean kolce;
 
         public Kwiaty()
-        {
-        Random r = new Random();
-        switch(r.nextInt(4))
-        {
-            case 0:
-                set("Stokrotka","Biały",false);
-                break;
+            {
+                Random r = new Random();
+                switch(r.nextInt(4))
+                    {
+                     case 0:
+                        set("Stokrotka","Biały",false);
+                        break;
 
-            case 1:
-                set("Dzika róza","Różowy",true);
-                break;
+                    case 1:
+                        set("Dzika róza","Różowy",true);
+                        break;
                 
-            case 2:
-                set("Niezapominajka","Niebieski",false);
-                break;
+                    case 2:
+                        set("Niezapominajka","Niebieski",false);
+                        break;
                 
-            case 3:
-                set("Zawilec","Zolty",false);
-                break;
-        } 
+                    case 3:
+                        set("Zawilec","Zolty",false);
+                        break;
+                    } 
            
-        }
+            }
        @Override
        public void show() 
         { 
