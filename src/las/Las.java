@@ -13,7 +13,7 @@ public class Las
         
         for(int i=0;i<=99;i++)
             {
-                x = r.nextInt(7);
+                x = r.nextInt(8);
                 switch(x)
                     {
                         case 0:las[i] = new Kwiaty("Stokrotka","Biały",false);break;
