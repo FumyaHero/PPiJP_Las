@@ -18,7 +18,6 @@ public class Ssaki extends Fauna implements Zycie
 
     public Ssaki()
     {
-        
         Random r = new Random();
         switch(r.nextInt(3))
         {
