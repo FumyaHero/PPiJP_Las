@@ -13,7 +13,7 @@ public class Las
         
         for(int i=0;i<=99;i++)
             {
-                x = r.nextInt(6);
+                x = r.nextInt(7);
                 switch(x)
                     {
                         case 0:las[i] = new Kwiaty("Stokrotka","Biały",false);break;
@@ -22,6 +22,7 @@ public class Las
                         case 3:las[i] = new Ssaki("Dzik","Żołędzie","Ciemnobrązowe");break;
                         case 4:las[i] = new Ssaki("Sarna","Owoce leśne","Jasnobrązowe");break;
                         case 5:las[i] = new Ssaki("Lis","Mięso","Rude");break;
+                        case 6:las[i] = new Kwiaty("Zawilec","Zolty",false);break;
                     } 
         
             }
