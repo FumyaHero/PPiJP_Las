@@ -13,7 +13,7 @@ public class Las
         
         for(int i=0;i<=99;i++)
             {
-                x = r.nextInt(3);
+                x = r.nextInt(2);
                 switch(x)
                     {
                         case 0:
