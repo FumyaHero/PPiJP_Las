@@ -40,7 +40,7 @@ public class Ssaki extends Fauna implements Zycie
         @Override
     public void show() 
     { 
-        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Dieta: " + dieta + System.lineSeparator() + "Kolor futra: " + kolorfutra + System.lineSeparator()); 
+        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Dieta: " + dieta + System.lineSeparator() + "Kolor futra: " + kolor_futra + System.lineSeparator()); 
     }      
     
     private void set( String gatunek, String dieta, String kolor_futra)
