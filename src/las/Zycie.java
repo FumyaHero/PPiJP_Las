@@ -9,6 +9,8 @@ package las;
  *
  * @author Student
  */
+
+// Abstrac class only !!!
 public interface Zycie 
 {
     String stanmaterii = "Ożywiona";
