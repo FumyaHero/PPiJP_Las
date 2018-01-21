@@ -32,6 +32,9 @@ public class Ssaki extends Fauna implements Zycie
             case 2:
                 set("Sarna","Owoce leśne","Jasnobrązowe");
                 break;
+            case 4:
+                set("Wiewiórka","Żołędzie","Rude");
+                break;
         } 
 
     }

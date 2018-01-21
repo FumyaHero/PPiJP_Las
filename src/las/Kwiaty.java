@@ -20,23 +20,27 @@ public class Kwiaty extends Flora implements Zycie
     public Kwiaty()
     {
         Random r = new Random();
-        switch(r.nextInt(4))
+        switch(r.nextInt(5))
         {
             case 0:
-            set("Stokrotka","Biały",false);
-            break;
+                set("Stokrotka","Biały",false);
+                break;
 
             case 1:
-            set("Dzika róza","Różowy",true);
-            break;
+                set("Dzika róza","Różowy",true);
+                break;
                         
             case 2:
-            set("Niezapominajka","Niebieski",false);
-            break;
+                set("Niezapominajka","Niebieski",false);
+                break;
                 
             case 3:
-            set("Zawilec","Zolty",false);
-            break;
+                set("Zawilec","Zolty",false);
+                break;
+            
+            case 4:
+                set("Przylaszczka","Fioletowy",false);
+                break;
         } 
            
     }
