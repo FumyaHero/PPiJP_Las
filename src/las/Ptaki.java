@@ -5,6 +5,8 @@
  */
 package las;
 
+import java.util.Random;
+
 /**
  *
  * @author Student
@@ -15,16 +17,26 @@ public class Ptaki extends Fauna implements Zycie
        String dieta;
        int rozpietoscskrzydel;
 
-       public Ptaki(String x,String y,int k)
-            {
-                this.gatunek = x;
-                this.dieta = y;
-                this.rozpietoscskrzydel = k;
-            }
+public Ptaki()
+    {
+        Random r = new Random();
+        switch(r.nextInt(1))
+        {
+            case 0:
+                set("Dzieciol","owady",70);
+                break;
+        } 
+    }
 
         @Override
         public void show() 
         { 
             System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Dieta: " + dieta + System.lineSeparator() + "Rozpiętość skrzydeł: " + rozpietoscskrzydel +" cm"+ System.lineSeparator()); 
         } 
+private void set(String gatunek, String dieta, int rozpietoscskrzydel)
+    {
+        this.gatunek = gatunek;
+        this.dieta = dieta;
+        this.rozpietoscskrzydel = rozpietoscskrzydel;
+    }
 }

@@ -13,17 +13,22 @@ public class Las
         
         for(int i=0;i<=99;i++)
         {
-            x = r.nextInt(2);
+            x = r.nextInt(3);
             switch(x)
             {
                 case 0:
                     las[i] = new Ssaki();
                     break;
-
-                            
+           
                 case 1:
                     las[i] = new Kwiaty();
                     break;
+                    
+                case 2:
+                    las[i] = new Ptaki();
+                    break;
+                    
+                
             } 
             
             // Wypisanie nowego obiektu
