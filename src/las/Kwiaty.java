@@ -49,7 +49,7 @@ public class Kwiaty extends Flora implements Zycie
     { 
         System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Kolor płatków: " + kolorplatkow + System.lineSeparator() + "Czy ma kolce? " + kolce + System.lineSeparator()); 
     }  
-    private void set( String gatunek, String kolorplatkow, Boolean kolce)
+    private void set(String gatunek, String kolorplatkow, Boolean kolce)
     {
         this.gatunek = gatunek;
         this.kolorplatkow = kolorplatkow;
