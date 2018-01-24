@@ -15,7 +15,7 @@ public class Ptaki extends Fauna implements Zycie
 {
        String gatunek;
        String dieta;
-       int rozpietoscskrzydel;
+       int dlugoscciala;
 
 public Ptaki()
     {
@@ -25,18 +25,23 @@ public Ptaki()
             case 0:
                 set("Dzieciol","owady",70);
                 break;
+                
+            case 1:
+                set("Puszczyk","owady",70);
+                break;
         } 
     }
 
         @Override
-        public void show() 
-        { 
-            System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Dieta: " + dieta + System.lineSeparator() + "Rozpiętość skrzydeł: " + rozpietoscskrzydel +" cm"+ System.lineSeparator()); 
-        } 
-private void set(String gatunek, String dieta, int rozpietoscskrzydel)
+public void show() 
+    { 
+        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Dieta: " + dieta + System.lineSeparator() + "Dlugosc diala: " + dlugoscciala +" cm"+ System.lineSeparator()); 
+    } 
+
+private void set(String gatunek, String dieta, int dlugoscciala)
     {
         this.gatunek = gatunek;
         this.dieta = dieta;
-        this.rozpietoscskrzydel = rozpietoscskrzydel;
+        this.dlugoscciala = dlugoscciala;
     }
 }

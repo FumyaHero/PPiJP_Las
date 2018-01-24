@@ -16,7 +16,7 @@ public class Ssaki extends Fauna implements Zycie
     String dieta;
     String kolor_futra;
 
-    public Ssaki()
+public Ssaki()
     {
         Random r = new Random();
         switch(r.nextInt(3))
@@ -40,12 +40,12 @@ public class Ssaki extends Fauna implements Zycie
     }
     
         @Override
-    public void show() 
+public void show() 
     { 
         System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Dieta: " + dieta + System.lineSeparator() + "Kolor futra: " + kolor_futra + System.lineSeparator()); 
     }      
     
-    private void set(String gatunek, String dieta, String kolor_futra)
+private void set(String gatunek, String dieta, String kolor_futra)
     {
         this.gatunek = gatunek;
         this.dieta = dieta;
