@@ -15,32 +15,29 @@ public class Gady extends Fauna implements Zycie
 {
        String gatunek;
        String dieta;
-       boolean pancerz;
+       String ochrona;
 
-public Gady(String x,String y,boolean k)
+public Gady()
     {
         Random r = new Random();
         switch(r.nextInt(1))
         {
             case 0:
-                set("Dzieciol","owady",true);
+                set("Jaszczurka zwinka","pajaki,owady,slimaki","Nie");
                 break;
-                
-            case 1:
-                set("Puszczyk","owady",true);
-                break;
+            
         } 
     }
 
         @Override
 public void show() 
     { 
-        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Dieta: " + dieta + System.lineSeparator() + "Pancerz? " + pancerz + System.lineSeparator()); 
+        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Dieta: " + dieta + System.lineSeparator() + "Czy jest pod ochroną?: " + ochrona + System.lineSeparator()); 
     }
-private void set(String gatunek, String dieta, boolean pancerz)
+private void set(String gatunek, String dieta, String ochrona)
     {
         this.gatunek = gatunek;
         this.dieta = dieta;
-        this.pancerz = pancerz;
+        this.ochrona = ochrona;
     }
 }

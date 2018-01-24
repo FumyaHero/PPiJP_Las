@@ -14,33 +14,30 @@ import java.util.Random;
 public class Mech extends Flora implements Zycie 
 {
     String gatunek;
-    String kolor;
-    String sprezystosc;
+    String wystepowanie;
+    String ochrona;
 
-public Mech(String x,String y,String k)
+public Mech()
     {
         Random r = new Random();
         switch(r.nextInt(1))
         {
             case 0:
-                set("Dzieciol","owady",true);
+                set("Biczyca","lasy swierkowe","czesciowo");
                 break;
-                
-            case 1:
-                set("Puszczyk","owady",true);
-                break;
+            
         }
     }
 
    @Override
 public void show() 
     { 
-        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Kolor płatków: " + kolor + System.lineSeparator() + "Sprężystość: " + sprezystosc + System.lineSeparator()); 
+        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + ": " + "Wystepowanie: " + wystepowanie + System.lineSeparator() + "Czy jest pod ochrona?: " + ochrona + System.lineSeparator()); 
     }
-private void set(String gatunek, String kolor, String sprezystosc)
+private void set(String gatunek, String wystepowanie, String ochrona)
     {
         this.gatunek = gatunek;
-        this.kolor = kolor;
-        this.sprezystosc = sprezystosc;
+        this.wystepowanie = wystepowanie;
+        this.ochrona = ochrona;
     }   
 }

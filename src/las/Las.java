@@ -13,7 +13,7 @@ public class Las
         
         for(int i=0;i<=99;i++)
         {
-            x = r.nextInt(3);
+            x = r.nextInt(9);
             switch(x)
             {
                 case 0:
@@ -28,6 +28,29 @@ public class Las
                     las[i] = new Ptaki();
                     break;
                     
+                    case 3:
+                    las[i] = new Drzewa();
+                    break;
+                    
+                    case 4:
+                    las[i] = new Gady();
+                    break;
+                    
+                    case 5:
+                    las[i] = new Krzewy();
+                    break;
+                    
+                    case 6:
+                    las[i] = new Grzyby();
+                    break;
+                    
+                    case 7:
+                    las[i] = new Mech();
+                    break;
+                    
+                    case 8:
+                    las[i] = new Plazy();
+                    break;
                 
             } 
             

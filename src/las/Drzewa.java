@@ -14,33 +14,30 @@ import java.util.Random;
 public class Drzewa extends Flora implements Zycie 
 {
     String gatunek;
-    boolean czyliscie;
-    int wysokosc;
+    String typlisci;
+    String wysokosc;
 
-public Drzewa(String x,boolean y,int k)
+public Drzewa()
     {
         Random r = new Random();
         switch(r.nextInt(1))
         {
             case 0:
-                set("Dzieciol","owady",70);
+                set("Sosna limba","igły","20 do 25");
                 break;
-                
-            case 1:
-                set("Puszczyk","owady",70);
-                break;
+         
         } 
     }
 
      @Override
 public void show() 
     { 
-        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Czy ma liście? " + czyliscie + System.lineSeparator() + "Wysokość: " + wysokosc +" m"+ System.lineSeparator()); 
+        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Typ lisci: " + typlisci + System.lineSeparator() + "Wysokość: " + wysokosc +" m"+ System.lineSeparator()); 
     } 
-private void set(String gatunek, String dieta, int rozpietoscskrzydel)
+private void set(String gatunek, String typlisci, String wysokosc)
     {
         this.gatunek = gatunek;
-        this.czyliscie = czyliscie;
+        this.typlisci = typlisci;
         this.wysokosc = wysokosc;
     }
 }
