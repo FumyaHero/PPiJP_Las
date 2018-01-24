@@ -20,19 +20,34 @@ public class Mech extends Flora implements Zycie
 public Mech()
     {
         Random r = new Random();
-        switch(r.nextInt(1))
+        switch(r.nextInt(5))
         {
             case 0:
-                set("Biczyca","lasy swierkowe","czesciowo");
+                set("Biczyca trójwrębna","lasy swierkowe","czesciowo");
                 break;
             
+            case 1:
+                set("drabik drzewkowaty","Zbiorowiska leśne","czesciowo");
+                break;
+                
+            case 2:
+                set("stożka ostrokrężna","Zacienione miejsca, częsty w lasach","nie");
+                break;
+                
+            case 3:
+                set("widłoząbek włoskowy","rośnie na brzegach dróg leśnych","nie");
+                break;
+                
+            case 4:
+                set("widłoząb miotłowy","lasy iglaste i mieszane","czesciowo");
+                break;
         }
     }
 
    @Override
 public void show() 
     { 
-        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + ": " + "Wystepowanie: " + wystepowanie + System.lineSeparator() + "Czy jest pod ochrona?: " + ochrona + System.lineSeparator()); 
+        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Wystepowanie: " + wystepowanie + System.lineSeparator() + "Czy jest pod ochrona?: " + ochrona + System.lineSeparator()); 
     }
 private void set(String gatunek, String wystepowanie, String ochrona)
     {

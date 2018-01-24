@@ -20,10 +20,26 @@ public class Drzewa extends Flora implements Zycie
 public Drzewa()
     {
         Random r = new Random();
-        switch(r.nextInt(1))
+        switch(r.nextInt(5))
         {
             case 0:
                 set("Sosna limba","igły","20 do 25");
+                break;
+                
+            case 1:
+                set("Buk zwyczajny","Jajowate lub eliptyczne","od 30 do 50");
+                break;
+                
+            case 2:
+                set("Dąb czerwony","Mocno klapowane (okolo 25cm)","do 25");
+                break;
+                
+            case 3:
+                set("Świerk pospolity","igły","40");
+                break;
+                
+            case 4:
+                set("Robinia akacjowa","Złożone z wielu owalnych listków","do 25");
                 break;
          
         } 

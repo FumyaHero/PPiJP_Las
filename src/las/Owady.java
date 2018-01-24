@@ -14,33 +14,45 @@ import java.util.Random;
 public class Owady extends Fauna implements Zycie 
 {
     String gatunek;
-    int iloscskrzydel;
-    int liczbakonczyn;
+    String dieta;
+    String wielkosc;
 
-    public Owady(String x,int y,int k)
+    public Owady()
     {
         Random r = new Random(); 
         switch(r.nextInt(5))
         {
             case 0:
-                set("Pszczoła",4,2);
+                set("Mszyca bzowa","Roślinożerna","ok 1");
                 break;
 
             case 1:
-                set("Pszczoła",4,2);
+                set("Rohatyniec nosorożec","Roślinożerny","30");
+                break;
+                
+            case 2:
+                set("Kowal bezskrzydły","Wszystkożerny","10");
+                break;
+                
+            case 3:
+                set("Łunica czerwona","Poluje na inne owady","40");
+                break;
+                
+            case 4:
+                set("Mieniak tęczowiec","Roślinami żywicielkami są wierzba iwa, szara, uszata","50");
                 break;
         }
     }
         @Override
     public void show() 
     { 
-        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Liczba skrzydeł: " + iloscskrzydel + System.lineSeparator() + "Liczba kończyn: " + liczbakonczyn +" cm"+ System.lineSeparator()); 
+        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Dieta: " + dieta + System.lineSeparator() + "Wielkosc: " + wielkosc +" mm"+ System.lineSeparator()); 
     } 
-    private void set( String gatunek, int iloscskrzydel, int liczbakonczyn)
+    private void set( String gatunek, String iloscskrzydel, String wielkosc)
     {
         this.gatunek = gatunek;
-        this.iloscskrzydel = iloscskrzydel;
-        this.liczbakonczyn = liczbakonczyn;
+        this.dieta = dieta;
+        this.wielkosc = wielkosc;
     }
 }
 

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package las;
-import java.util.*;
+import java.util.Random;
 
 /**
  *
@@ -19,7 +19,7 @@ public class Ssaki extends Fauna implements Zycie
 public Ssaki()
     {
         Random r = new Random();
-        switch(r.nextInt(3))
+        switch(r.nextInt(4))
         {
             case 0:
                 set("Lis","Mięso","Rude");
@@ -32,7 +32,8 @@ public Ssaki()
             case 2:
                 set("Sarna","Owoce leśne","Jasnobrązowe");
                 break;
-            case 4:
+                              
+            case 3:
                 set("Wiewiórka","Żołędzie","Rude");
                 break;
         } 

@@ -27,7 +27,19 @@ public Ptaki()
                 break;
                 
             case 1:
-                set("Puszczyk","owady",70);
+                set("Bielik","owady",80);
+                break;
+                
+            case 2:
+                set("Białozór ","Średniej wielkości ptaki",55);
+                break;
+                
+            case 3:
+                set("Cyranka ","rosliny i zwierzeta, z powierzchni wody",38);
+                break;
+                
+            case 4:
+                set("Zielonka","Małe bezkręgowce i nasiona roślin",20);
                 break;
         } 
     }

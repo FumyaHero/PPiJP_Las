@@ -21,10 +21,26 @@ public class Grzyby implements Zycie{
 public Grzyby()
     {
         Random r = new Random();
-        switch(r.nextInt(1))
+        switch(r.nextInt(5))
         {
             case 0:
-                set("Borowik szlachetny","tak","rurki");
+                set("Borowik szlachetny","Jadalny","rurki");
+                break;
+                
+            case 1:
+                set("Borowik ceglastopory","Jadalny warunkowo","czerwone kosmki lub ziarenka");
+                break;
+                
+            case 2:
+                set("Muchomor zielonawy","Trujący","blaszki");
+                break;
+                
+            case 3:
+                set("Klejówka plamista","Jadalny","Gładkie");
+                break;
+                
+            case 4:
+                set("Gąska siarkowa","Trujący","blaszki");
                 break;
                 
             
@@ -34,7 +50,7 @@ public Grzyby()
    @Override
 public void show() 
     { 
-        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Czy jest jadalny? " + czyjadalny + System.lineSeparator() + "Spód kapelusza: " + spod_kapelusza + System.lineSeparator()); 
+        System.out.println("Materia: " + stanmaterii + System.lineSeparator() + "Królestwo: " + krolestwo + System.lineSeparator() +"Gatunek: " + gatunek + System.lineSeparator() + "Wartość spożywcza: " + czyjadalny + System.lineSeparator() + "Spód kapelusza: " + spod_kapelusza + System.lineSeparator()); 
     }
 private void set(String gatunek, String czyjadalny, String spod_kapelusza)
     {

@@ -20,12 +20,27 @@ public class Plazy extends Fauna implements Zycie
 public Plazy()
     {
         Random r = new Random();
-        switch(r.nextInt(1))
+        switch(r.nextInt(5))
         {
             case 0:
-                set("Grzebiuszka","grzebiuszkowate","10");
+                set("Grzebiuszka ziemna","grzebiuszkowate","10");
                 break;
-            
+                
+            case 1:
+                set("Kumak nizinny","kumakowate","20");
+                break;
+                
+            case 2:
+                set("Rzekotka drzewna","rzekotki","od 4 do 6");
+                break;  
+              
+            case 3:
+                set("Ropucha szara","ropuchowate","40");
+                break;
+                
+            case 4:
+                set("Ropucha zielona","ropuchowate","od 6 do 15");
+                break;
         }
     }
 

@@ -20,12 +20,27 @@ public class Gady extends Fauna implements Zycie
 public Gady()
     {
         Random r = new Random();
-        switch(r.nextInt(1))
+        switch(r.nextInt(5))
         {
             case 0:
                 set("Jaszczurka zwinka","pajaki,owady,slimaki","Nie");
                 break;
             
+                case 1:
+                set("Jaszczurka zielona","stawonogi,jaszczurki,weze","Calkowita ochrona w Polsce");
+                break;
+                
+                case 2:
+                set("Padalec zwyczajny ","owady, ślimaki, dżdżownice","Calkowita ochrona w Polsce");
+                break;
+                
+                case 3:
+                set("Zaskroniec zwyczajny","płazy","Calkowita ochrona w Polsce");
+                break;
+                
+                case 4:
+                set("Żmija zygzakowata","gryzonie polne, ryjówki, krety","Calkowita ochrona w Polsce");
+                break;
         } 
     }
 
