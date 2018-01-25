@@ -61,10 +61,3 @@ public class Las
     }
 }
 
- /*
-                        case 0:las[i] = new Kwiaty("Stokrotka","Biały",false);break;
-                        case 1:las[i] = new Kwiaty("Dzika róza","Różowy",true);break;
-                        case 2:las[i] = new Kwiaty("Niezapominajka","Niebieski",false);break;
-
-                        case 6:las[i] = new Kwiaty("Zawilec","Zolty",false);break;
-*/

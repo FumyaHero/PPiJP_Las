@@ -54,14 +54,3 @@ private void set(String gatunek, String dieta, String kolor_futra)
     }
 }
 
-// OLD CODE
-/*
-        
-    this.gatunek = x;
-    this.dieta = y;
-    this.kolorfutra = k;
-    
-    case 3:las[i] = new Ssaki("Dzik","Żołędzie","Ciemnobrązowe");break;
-    case 4:las[i] = new Ssaki("Sarna","Owoce leśne","Jasnobrązowe");break;
-    case 5:las[i] = new Ssaki("Lis","Mięso","Rude");break;
-*/
